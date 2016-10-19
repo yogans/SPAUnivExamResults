@@ -1,0 +1,32 @@
+<div class="page-header">
+  <h1>Exam Results</h1>
+</div>
+
+<div class="form-group">
+  <label for="usr">Registration Number :</label>
+  <input type="text" class="form-control" id="usr" ng-model="regNum">
+</div>
+
+<div class="form-group">
+  <label for="pwd">Password :</label>
+  <input type="password" class="form-control" id="pwd" ng-model="pass">
+</div>
+
+<button type="submit" class="btn btn-primary" ng-click="viewResults()">View Result</button>
+
+<div class="container ng-scope" ng-show="showResult">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="(key,value) in examResult">
+        <td>{{key}}</td>
+        <td>{{value}}</td>s
+      </tr>
+    </tbody>
+  </table>
+</div>
