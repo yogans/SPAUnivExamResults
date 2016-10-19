@@ -9,12 +9,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Bootstrap Js includes !-->
-    
+    <!-- Bootstrap includes !-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css">
     
     <!-- Angular Js includes !-->
     
@@ -29,22 +32,27 @@
   </head>
   
   <body ng-controller="HomePageCtrl">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=#>ONe UnIV</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <menulist></menulist>
+          </div>
+        </div>
+      </nav>
+    <footer class="footer">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href=#>ONe UnIV</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <menulist></menulist>
-        </div>
+        <p class="text-muted"><center>&copy; Copyright 2016 <b>#1 University</b></center>
+        </p>
       </div>
-    </nav>
+    </footer>
   </body>
-  
 </html>
