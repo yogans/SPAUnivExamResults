@@ -3,7 +3,7 @@
   <head>
     
     <title>
-      #One University - Exam results
+      #1 University - Exam results
     </title>
     
     <meta charset="UTF-8">
@@ -23,6 +23,10 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+  
+    <!-- Gmaps Api !-->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
     <!-- Local Script includes !-->
     
@@ -41,13 +45,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=#>ONe UnIV</a>
+            <a class="navbar-brand" href=#/><b>#1 University</b></a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <menulist></menulist>
           </div>
         </div>
       </nav>
+      
+      <div class="container" ng-view></div>
+      
     <footer class="footer">
       <div class="container">
         <p class="text-muted"><center>&copy; Copyright 2016 <b>#1 University</b></center>
