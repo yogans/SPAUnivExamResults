@@ -1,0 +1,83 @@
+{
+  
+  "records" : [
+    
+    {
+      "Name" : "Yogan",
+      
+      "Registration_Number" : "284160",
+      
+      "Password" : "123asd!@#",
+      
+      "Marks" : {
+        
+        "English" : 60,
+        "Tamil" : 78,
+        "Maths" : 90,
+        "Science" : 75,
+        "Social" : 60
+        
+      }
+      
+    },
+    
+    {
+      "Name" : "Takku",
+      
+      "Registration_Number" : "284161",
+      
+      "Password" : "456fgh$%^",
+      
+      "Marks" : {
+        
+        "English" : 50,
+        "Tamil" : 81,
+        "Maths" : 92,
+        "Science" : 53,
+        "Social" : 67
+      
+      }
+      
+    },
+    
+    {
+      "Name" : "Sathish",
+      
+      "Registration_Number" : "284162",
+      
+      "Password" : "789jkl&*(",
+      
+      "Marks" : {
+        
+        "English" : 70,
+        "Tamil" : 74,
+        "Maths" : 40,
+        "Science" : 55,
+        "Social" : 63
+      
+      }
+      
+    },
+    
+    {
+      "Name" : "Karthick",
+      
+      "Registration_Number" : "284163",
+      
+      "Password" : "321dsa#@!",
+      
+      "Marks" : {
+        
+        "English" : 100,
+        "Tamil" : 81,
+        "Maths" : 100,
+        "Science" : 53,
+        "Social" : 67
+      
+      }
+      
+    }
+    
+  ]
+  
+}
