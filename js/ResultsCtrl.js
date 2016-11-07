@@ -1,12 +1,15 @@
 univExamResults.controller('ResultsCtrl',function ResultCtrl($scope,$http){
 
+  //variable data initialization
   $scope.pass = "";
   $scope.showResult = false;
   $scope.examResult = {};
+  $scope.userName = "";
 
   var continueIteration = true;
   var showResultTable = false;
   var examResultObj = {};
+  var userName;
 
   $http.get("Resources/Results.json").then(function(response){
 
@@ -14,14 +17,14 @@ univExamResults.controller('ResultsCtrl',function ResultCtrl($scope,$http){
 
   })
 
-  $scope.viewResults=function(){
+  $scope.viewResults = function(){
 
    if(typeof $scope.regNum === "undefined" || $scope.regNum === ""){
 
      alert("Enter registration number!");
 
    }
-
+   
    else if(typeof $scope.pass === "undefined" || $scope.pass === ""){
 
      alert("Enter password!");
@@ -66,7 +69,8 @@ univExamResults.controller('ResultsCtrl',function ResultCtrl($scope,$http){
              //console.log($scope.examResult);
              showResultTable = true;
              //$scope.showResult = true;
-             $scope.pass = "";
+             //$scope.pass = "";
+             userName = value.Name;
 
            }
 
@@ -87,7 +91,20 @@ univExamResults.controller('ResultsCtrl',function ResultCtrl($scope,$http){
 
    $scope.showResult = showResultTable;
    $scope.examResult = examResultObj;
-
+   $scope.userName = userName;
+    
   };
+  
+  $scope.viewAnotherResult = function(){
+    
+    continueIteration = true;
+    showResultTable = false;
+    examResultObj = {};
+    userName = "";
+    $scope.showResult  = !$scope.showResult;
+    $scope.regNum = "";
+    $scope.pass = "";
+    
+  }
 
 });
